@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Card from './containers/Card'
 
-import './index.css'
+import './index.scss'
 
 
 class Home extends Component {

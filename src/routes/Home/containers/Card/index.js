@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import CardItem from '../../components/CardItem'
 
-import './card.css'
+import './card.scss'
 
 const cards = [
   {

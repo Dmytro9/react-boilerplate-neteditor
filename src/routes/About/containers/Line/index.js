@@ -10,14 +10,14 @@ import {
   selectLines,
   isLoading,
 } from './selectors'
-import LineItemTest from '../../components/LineItemTest'
+import LineItem from '../../components/LineItem'
 import Spinner from '../../../../common/components/Spinner'
 
 
 class Line extends Component {
 
   componentDidMount() {
-   this.props.getLines()
+    this.props.getLines()
   }
 
   handleIncrement = id => {
@@ -26,7 +26,7 @@ class Line extends Component {
 
   renderLine = lines => {
     return lines.map(line => {
-      return <LineItemTest
+      return <LineItem
         key={line.id}
         id={line.id}
         text={line.text}

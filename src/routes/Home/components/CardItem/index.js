@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './cardItem.css'
+import './cardItem.scss'
 
 
 class CardItem extends Component {

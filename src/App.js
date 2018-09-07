@@ -8,7 +8,7 @@ import About from './routes/About'
 import Navbar from './common/containers/Navbar'
 
 
-import './App.css'
+import './App.scss'
 
 class App extends Component {
   render() {
