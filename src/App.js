@@ -5,6 +5,8 @@ import { Provider } from 'react-redux'
 import store from './store/store'
 import Home from './routes/Home'
 import About from './routes/About'
+import Chart from './routes/Chart'
+import Rechart from './routes/Rechart'
 import Navbar from './common/containers/Navbar'
 
 
@@ -19,6 +21,8 @@ class App extends Component {
             <Navbar />
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
+            <Route exact path='/chart' component={Chart} />
+            <Route exact path='/rechart' component={Rechart} />
           </React.Fragment>
         </Router>
       </Provider>

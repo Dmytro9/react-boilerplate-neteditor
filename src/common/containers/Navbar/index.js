@@ -27,6 +27,20 @@ class Navbar extends Component {
                   About
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/chart">
+                  Chart
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/rechart">
+                  Rechart
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

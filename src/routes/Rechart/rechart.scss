@@ -1,0 +1,34 @@
+.rechart-wrap {
+  display: block;
+  width: 768px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.recharts-layer {
+  &.recharts-line {
+    path {
+      stroke-width: 4;
+    }
+  }
+}
+
+.recharts-cartesian-axis-ticks {
+
+  .recharts-layer:first-child {
+    display: none;
+  }
+
+  .recharts-layer:last-child {
+    display: none;
+  }
+  
+}
+
+.ert {
+  line {
+    display: block;
+    position: relative !important;
+    margin-top: 20px;
+  }
+}
