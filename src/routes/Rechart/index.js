@@ -9,15 +9,14 @@ class Rechart extends Component {
     super(props)
     this.state = {
       data: [
-        { name: 'Aprill', pv: 120, },
-        { name: 'May', pv: 160, },
-        { name: 'June', pv: 200, },
-        { name: 'July', pv: 260, },
-        { name: 'August', pv: 330, },
-        { name: 'September', pv: 480, id: 't' },
-        { name: 'October', pv: 550, },
-        { name: 'November', pv: 600, },
-        // { uv: 2300, },
+        { name: 'Aprill', pv: 420, pt: 420,  },
+        { name: 'May', pv: 430, pt: 420 },
+        { name: 'June', pv: 440, pt: 440 },
+        { name: 'July', pv: 460, pt: 450 },
+        { name: 'August', pv: 480, pt: 470 },
+        { name: 'September', pv: 500, pt: 470 },
+        { name: 'October', pv: 550, pt: 480, },
+        { name: 'November', },
       ]
     }
   }

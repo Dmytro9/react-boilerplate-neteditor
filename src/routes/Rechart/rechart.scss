@@ -1,8 +1,10 @@
 .rechart-wrap {
   display: block;
-  width: 768px;
-  height: 800px;
+  width: 920px;
+  // height: 800px;
   margin: 0 auto;
+  background-color: #fafafa;
+  font-size: 12px;
 }
 
 .recharts-layer {
@@ -25,10 +27,69 @@
   
 }
 
-.ert {
+.target {
+ 
   line {
-    display: block;
-    position: relative !important;
-    margin-top: 20px;
+    stroke-width: 2;
+  }
+}
+
+.today {
+  line {
+    stroke-width: 2;
+  }
+}
+
+.recharts-layer  {
+  .recharts-cartesian-axis-tick {
+    text {
+      fill: #838383;
+    }
+  }
+}
+
+.low {
+  text {
+    fill: #838383;
+  } 
+}
+
+.fair {
+  text {
+    fill: #838383;
+  }
+}
+
+.recharts-line-dots {
+  circle {
+    stroke: #fff;
+    stroke-width: 3;
+    fill: rgb(32, 174, 236);
+
+    &:hover {
+
+    }
+  }
+  circle:not(:last-child) {
+    display: none;
+  }
+}
+
+.recharts-active-dot {
+  circle {
+    stroke: #fff;
+    stroke-width: 0;
+    fill: rgb(32, 174, 236);
+  }
+}
+
+.refToday {
+  path {
+    fill: #fafafa;
+    fill-opacity: 1;
+  }
+
+  text {
+    font-size: 14px;
   }
 }
