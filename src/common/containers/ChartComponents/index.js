@@ -29,7 +29,7 @@ class CustomAxisTick extends Component {
 
     if (payload.value === 2) {
       return (
-        <Text y={y + 10} x={payload.coordinate} className='aprile' width={50} angle={30}>Aprile</Text>
+        <Text y={y + 10} x={payload.coordinate} className='aprile' width={50} angle={45} textAnchor={'middle'}>Aprile</Text>
       )
     } 
 
@@ -63,7 +63,7 @@ class ChartComponents extends Component {
           margin={{ top: 20, right: 30, left: 30, bottom: 5 }}>
           {/* <CartesianGrid strokeDasharray="3 3" /> */}
           
-    <XAxis  dataKey="name" stroke="#e5e5e5" tick={<CustomAxisTick />} />
+    <XAxis  dataKey="name" stroke="#e5e5e5" tick={<CustomAxisTick />} padding={{ right: 140 }} />
           {/* <XAxis dataKey="pv" stroke="red" type='number' /> */}
           
           <YAxis dataKey="pv" domain={[400, 'dataMax']} hide={true} />
