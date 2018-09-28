@@ -93,3 +93,40 @@
     font-size: 14px;
   }
 }
+
+.refDot {
+
+  circle {
+    stroke-width: 3; 
+  }
+
+  text {
+    font-size: 18px;
+
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+  }
+
+  .todayScore {
+    font-size: 30px;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+  }
+
+}
+

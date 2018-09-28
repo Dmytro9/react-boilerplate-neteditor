@@ -4,6 +4,8 @@ class SVG extends Component {
   render() {
     const {viewBox} = this.props
 
+    // console.log(this.props)
+
     return (
 
       <svg x={viewBox.width - 30} y={viewBox.y}  width={20} height={20} fill="#f5d210" viewBox="0 0 1024 1024">
