@@ -5,7 +5,7 @@
   margin: 0 auto;
   background-color: #fafafa;
   font-size: 12px;
-}
+
 
 .recharts-layer {
   &.recharts-line {
@@ -36,7 +36,7 @@
 
 .today {
   line {
-    stroke-width: 2;
+    stroke-width: 1;
   }
 }
 
@@ -82,15 +82,20 @@
     fill: rgb(32, 174, 236);
   }
 }
-
 .refToday {
-  path {
+  & > path {
     fill: #fafafa;
     fill-opacity: 1;
   }
 
   text {
     font-size: 14px;
+
+    &.scoreNum {
+      font-size: 25px;
+      fill: rgb(32, 174, 236);
+      font-weight: 700;
+    }
   }
 }
 
@@ -102,31 +107,14 @@
 
   text {
     font-size: 18px;
-
-
-    &:after {
-      content: '';
-      display: block;
-      width: 100px;
-      height: 100px;
-      background: red;
-    }
   }
-
-  .todayScore {
-    font-size: 30px;
-    font-weight: 900;
-    display: block;
-    text-align: center;
-
-    &:after {
-      content: '';
-      display: block;
-      width: 100px;
-      height: 100px;
-      background: red;
-    }
-  }
+}
 
 }
 
+// Bar chart
+.recharts-layer.recharts-bar-rectangle {
+  path {
+    fill: linear-gradient(to top, blue, green)
+  }
+}
