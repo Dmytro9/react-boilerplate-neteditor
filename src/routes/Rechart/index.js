@@ -36,7 +36,7 @@ class Rechart extends Component {
         { name: 25, pv: 460, pt: 462 },
         { name: 26, pv: 480, pt: 466 },
         { name: 27, pv: 500, pt: 470 },
-        { name: 28, pv: 550, pt: 478 },
+        { name: 28, pv: 550, pt: 475 },
         { name: 29, },
       ]
     }

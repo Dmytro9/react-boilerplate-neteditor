@@ -7,7 +7,7 @@ import Home from './routes/Home'
 import About from './routes/About'
 import Chart from './routes/Chart'
 import Rechart from './routes/Rechart'
-import BarChar from './routes/Bar'
+import BarContainer from './routes/BarContainer'
 import Navbar from './common/containers/Navbar'
 
 
@@ -24,7 +24,7 @@ class App extends Component {
             <Route exact path='/about' component={About} />
             <Route exact path='/chart' component={Chart} />
             <Route exact path='/rechart' component={Rechart} />
-            <Route exact path='/bar' component={BarChar} />
+            <Route exact path='/bar' component={BarContainer} />
           </React.Fragment>
         </Router>
       </Provider>

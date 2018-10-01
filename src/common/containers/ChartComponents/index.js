@@ -1,17 +1,14 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import {
   ResponsiveContainer, LineChart, Line, XAxis, YAxis,
   ReferenceLine,
-  ScatterChart,
-  CartesianGrid,
+  // CartesianGrid,
   CartesianAxis,
   Tooltip,
-  Legend,
-  Area,
   Label,
   Text,
   ReferenceArea,
-  ReferenceDot,
+  // ReferenceDot,
 } from 'recharts'
 import Smile from '../Smile'
 import ScoreLine from '../ScoreLine'
@@ -32,31 +29,31 @@ class CustomAxisTick extends Component {
 
     if (payload.value === 7) {
       return (
-        <Text y={y + 10} x={payload.coordinate} width={30} className='june' textAnchor={'middle'}>June</Text>
+        <Text y={y + 10} x={payload.coordinate} className='june' textAnchor={'middle'}>June</Text>
       )
     }
 
     if (payload.value === 12) {
       return (
-        <Text y={y + 10} x={payload.coordinate} width={30} className='june' textAnchor={'middle'}>July</Text>
+        <Text y={y + 10} x={payload.coordinate} className='june' textAnchor={'middle'}>July</Text>
       )
     }
 
     if (payload.value === 17) {
       return (
-        <Text y={y + 10} x={payload.coordinate} width={100} className='may' textAnchor={'middle'}>August</Text>
+        <Text y={y + 10} x={payload.coordinate} className='may' textAnchor={'middle'}>August</Text>
       )
     }
 
     if (payload.value === 22) {
       return (
-        <Text y={y + 10} x={payload.coordinate} width={100} className='may' textAnchor={'middle'}>September</Text>
+        <Text y={y + 10} x={payload.coordinate} className='may' textAnchor={'middle'}>September</Text>
       )
     }
 
     if (payload.value === 27) {
       return (
-        <Text y={y + 10} x={payload.coordinate} width={100} className='may' textAnchor={'middle'}>October</Text>
+        <Text y={y + 10} x={payload.coordinate} className='may' textAnchor={'middle'}>October</Text>
       )
     }
 
@@ -81,7 +78,7 @@ class ChartComponents extends Component {
           <YAxis dataKey="pv" domain={[400, 'dataMax']} hide={true} />
           <Tooltip />
 
-          <Line dot={false} type="monotone" dataKey="pt" stroke="#20aeec" width={10} />
+          <Line dot={{ r: 9 }} type="monotone" dataKey="pt" stroke="#20aeec" width={10} />
           <CartesianAxis className='axisX' y={430} x={10} width={150} height={150} />
           <ReferenceLine x={28} stroke="#20aeec" className='today'>
           </ReferenceLine>
@@ -113,14 +110,14 @@ class ChartComponents extends Component {
               480
                       </Label>
           </ReferenceLine>
-          <ReferenceArea className='refToday' x1={27} x2={29} y1={478} y2={498}>
+          <ReferenceArea className='refToday' x1={27} x2={29} y1={482} y2={498}>
             <Label className='scoreNum'>
               475
           </Label>
             <Label className='lineScore' content={<ScoreLine />} />
           </ReferenceArea>
-          <ReferenceDot className='refDot' x={28} y={475} r={10} fill="#20aeec" stroke="#fafafa" stroke-width={5} isFront={true} >
-          </ReferenceDot>
+          {/* <ReferenceDot className='refDot' x={28} y={475} r={10} fill="#20aeec" stroke="#fafafa" stroke-width={5} isFront={true} >
+          </ReferenceDot> */}
           <ReferenceArea className='refToday' x1={27} x2={29} y1={450} y2={464}>
             <Label >
               Today

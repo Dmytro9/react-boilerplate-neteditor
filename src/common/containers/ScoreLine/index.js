@@ -8,7 +8,7 @@ class ScoreLine extends Component {
 
     return (
 
-      <svg x={viewBox.x} y={viewBox.y + 40}>
+      <svg x={viewBox.x} y={viewBox.y + 37}>
         <line x1={0} y1={0} x2={50} y2={0} style={{ stroke: 'rgb(32, 174, 236)', strokeWidth: '7' }} />
       </svg>
     )

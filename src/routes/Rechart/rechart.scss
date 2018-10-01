@@ -17,13 +17,13 @@
 
 .recharts-cartesian-axis-ticks {
 
-  .recharts-layer:first-child {
-    display: none;
-  }
+  // .recharts-layer:first-child {
+  //   display: none;
+  // }
 
-  .recharts-layer:last-child {
-    display: none;
-  }
+  // .recharts-layer:last-child {
+  //   display: none;
+  // }
   
 }
 
@@ -117,4 +117,14 @@
   path {
     fill: linear-gradient(to top, blue, green)
   }
+}
+
+
+.barchart-wrap {
+  display: block;
+  width: 480px;
+  // height: 400px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  font-size: 12px;
 }
